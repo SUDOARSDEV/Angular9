@@ -22,6 +22,9 @@ import { CookieModule, CookieService, CookieOptionsProvider } from 'ngx-cookie';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { VerificationComponent } from './components/Security/verification/verification.component';
+import { SendEmailComponent } from './components/Security/send-email/send-email.component';
+import { ResetPasswordComponent } from './components/Security/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     DashboardComponent,
     ProfileComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    VerificationComponent,
+    SendEmailComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
